@@ -6,10 +6,11 @@ public class Factorial {
 
     public static void main(String[] args) {
         int num;
-        System.out.println("Enter the num:");
+       // System.out.println("Enter the num:");
 
-        Scanner sc = new Scanner(System.in);
-        num = sc.nextInt();
+       // Scanner sc = new Scanner(System.in);
+       // num = sc.nextInt();
+        num= Integer.parseInt(args[0]);
         int result = factorial(num);
         System.out.println("Factorial of " + num + ": " + result);
     }

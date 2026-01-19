@@ -2,7 +2,9 @@ package com.padma;
 
 public class Prime {
     public static void main(String Arg[]) {
-        int num = 12;
+       // int num = 12;
+        int num = Integer.parseInt(Arg[0]);
+
         boolean flag = false;
         if (num == 0 || num == 1) {
             flag = true;
