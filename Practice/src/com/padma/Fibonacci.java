@@ -5,33 +5,35 @@ package com.padma;
  */
 public class Fibonacci {
     public static void main(String... args) {
+        int n = 10; // Number of terms to display
 
-        int a = 0, b = 1, c;
-        //  a,b,c,
-        //0,1,1,2,3,5,8,13,21,34,55,89
-        System.out.print(a + " , " + b);// 0 , 1
-        for (int i = 1; i < 9; i++) { //11
-            c = a + b;
-            System.out.print(" , " + c); // ,1
-            a = b;
-            b = c;
+        System.out.println("Iterative approach:");
+        printFibonacciIterative(n);
+
+        System.out.println("\n------------------");
+        System.out.println("Recursive approach:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fib(i) + " ");
         }
         System.out.println();
-        System.out.println("------------------");
-        System.out.println("Recursive");
+    }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.print(fib(i) + " ");
+    private static void printFibonacciIterative(int count) {
+        int a = 0, b = 1;
+        if (count >= 1) System.out.print(a);
+        if (count >= 2) System.out.print(" , " + b);
+
+        for (int i = 2; i < count; i++) {
+            int c = a + b;
+            System.out.print(" , " + c);
+            a = b;
+            b = c;
         }
     }
 
     static int fib(int n) {
-        if (n == 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
-        } else {
-            return fib(n - 1) + fib(n - 2);
-        }
+        if (n <= 0) return 0;
+        if (n == 1) return 1;
+        return fib(n - 1) + fib(n - 2);
     }
 }
