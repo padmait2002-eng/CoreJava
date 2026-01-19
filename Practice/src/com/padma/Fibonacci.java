@@ -1,5 +1,8 @@
 package com.padma;
 
+/**
+ * Generates Fibonacci series using both iterative and recursive approaches.
+ */
 public class Fibonacci {
     public static void main(String... args) {
 

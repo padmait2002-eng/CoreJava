@@ -1,5 +1,8 @@
 package com.padma;
 
+/**
+ * Checks if a number passed as a command-line argument is prime.
+ */
 public class Prime {
     public static void main(String Arg[]) {
        // int num = 12;

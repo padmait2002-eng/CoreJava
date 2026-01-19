@@ -2,6 +2,9 @@ package com.padma;
 
 import java.util.Scanner;
 
+/**
+ * Calculates the sum of digits of a number entered by the user.
+ */
 public class ReverseSum {
 
     public static void main(String[] args) {
