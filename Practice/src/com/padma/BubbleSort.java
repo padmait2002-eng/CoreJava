@@ -1,5 +1,8 @@
 package com.padma;
 
+/**
+ * Implements the Bubble Sort algorithm to sort an array of integers.
+ */
 public class BubbleSort {
     public static void main(String args[]) {
         int[] arr = {64, 34, 25, 12, 22, 11, 90};

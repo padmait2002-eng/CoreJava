@@ -2,6 +2,9 @@ package com.padma;
 
 import java.util.Scanner;
 
+/**
+ * Calculates the factorial of a number passed as a command-line argument.
+ */
 public class Factorial {
 
     public static void main(String[] args) {

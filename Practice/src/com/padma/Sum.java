@@ -2,6 +2,9 @@ package com.padma;
 
 import java.util.Scanner;
 
+/**
+ * Calculates the sum and average of a series of numbers entered by the user.
+ */
 public class Sum {
     public static void main(String args[]) {
         int count;
@@ -22,6 +25,3 @@ public class Sum {
     }
 
 }
-
-
-
